@@ -1,0 +1,57 @@
+@import "colors.scss";
+@import "reset.scss";
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: $grey;
+    
+}
+
+main{
+    width: 1000px;
+    background: #fff;
+    width: 80%;
+    margin: 0 auto;
+    height: 100%;
+    box-shadow: 8px 6px 9px  rgba(0,0,0,0.2);
+}
+
+.header{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+
+    &__logo{
+        font-size: 2rem;
+        margin-left: 30px;
+        & span{
+            color: $orange;
+        }
+    }
+
+    &__links{
+        display: flex;
+        margin-right: 30px;
+        & a{
+            text-decoration: none;
+            padding: 0 12px;
+            color: #000;
+            font-weight: 500;
+            transition: color .3s;
+            -webkit-transition: color .3s;
+            -moz-transition: color .3s;
+            -ms-transition: color .3s;
+            -o-transition: color .3s;
+}
+        & a:hover, .active{
+            color: $orange;
+        }
+    }
+
+    
+}
+.sparator1{
+    color: $grey;
+    width: 80%;
+}
